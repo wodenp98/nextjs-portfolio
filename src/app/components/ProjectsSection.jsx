@@ -12,7 +12,7 @@ const projectsData = [
     description: "Site de e-commerce Fullstack pour un photographe",
     image: "/images/projects/pierrevphotographie.png",
     tag: [
-      "All",
+      "Tout",
       "Nextjs",
       "Firebase",
       "Stripe",
@@ -28,7 +28,7 @@ const projectsData = [
     title: "Pixabay",
     description: "Algorithme de recherche avec une API Pixabay",
     image: "/images/projects/pixabay.png",
-    tag: ["All", "Nextjs", "Api", "Tailwind"],
+    tag: ["Tout", "Nextjs", "Api", "Tailwind"],
     gitUrl: "https://github.com/wodenp98/test-technique-mds",
     previewUrl: "https://test-technique-mds.vercel.app/",
   },
@@ -37,7 +37,7 @@ const projectsData = [
     title: "Groupomania",
     description: "Réseau Social d'entreprise (MERN Stack)",
     image: "/images/projects/groupomania.jpg",
-    tag: ["All", "MongoDB", "React", "Nodejs", "Express", "Sass"],
+    tag: ["Tout", "MongoDB", "React", "Nodejs", "Express", "Sass"],
     gitUrl: "https://github.com/wodenp98/PaulVigneron_7_26012022",
     previewUrl: "/videos/video-groupomania.mp4",
   },
@@ -46,7 +46,7 @@ const projectsData = [
     title: "Marvel Dashboard",
     description: "Project en cours",
     image: "/images/projects/marveldashboard.png",
-    tag: ["All", "Nextjs", "Prisma", "Tailwind", "Typescript"],
+    tag: ["Tout", "Nextjs", "Prisma", "Tailwind", "Typescript"],
     gitUrl: "https://github.com/wodenp98/marvel-project",
     previewUrl: "/videos/video-marvel.mp4",
   },
@@ -55,7 +55,7 @@ const projectsData = [
     title: "Clone Netflix",
     description: "Réalisation d'un clone de Netflix",
     image: "/images/projects/netflixclone.png",
-    tag: ["All", "React", "Tailwind"],
+    tag: ["Tout", "React", "Tailwind"],
     gitUrl: "https://github.com/wodenp98/netflix-clone",
     previewUrl: "https://netflix-clone-psi-jet.vercel.app/",
   },
@@ -64,7 +64,7 @@ const projectsData = [
     title: "Hrnet",
     description: "Convertir une librairie JQuery en React",
     image: "/images/projects/tableemployee.png",
-    tag: ["All", "React", "Redux Toolkit", "Firebase", "Styled Components"],
+    tag: ["Tout", "React", "Redux Toolkit", "Firebase", "Styled Components"],
     gitUrl: "https://github.com/wodenp98/PaulVigneron_14_12042023",
     previewUrl: "/videos/video-hrnet.mp4",
   },
@@ -73,7 +73,7 @@ const projectsData = [
     title: "Petit Plat",
     description: "Algorithme de recherche en vanilla javascript",
     image: "/images/projects/petitplat.png",
-    tag: ["All", "Javascript", "Sass"],
+    tag: ["Tout", "Javascript", "Sass"],
     gitUrl: "https://github.com/wodenp98/PaulVigneron_7_01112022",
     previewUrl: "https://paul-vigneron-7-01112022.vercel.app/",
   },
@@ -82,7 +82,7 @@ const projectsData = [
     title: "Dashboard Sport",
     description: "Dashboard en utilisant Recharts",
     image: "/images/projects/dashboardrecharts.png",
-    tag: ["All", "Recharts", "React", "Styled Components"],
+    tag: ["Tout", "Recharts", "React", "Styled Components"],
     gitUrl: "https://github.com/wodenp98/PaulVigneron_12_14022023",
     previewUrl: "/videos/video-dashboard.mp4",
   },
@@ -92,14 +92,14 @@ const projectsData = [
     description:
       "Intéraction avec un API MongoDB afin de gérer les utilisateurs",
     image: "/images/projects/bankApi.png",
-    tag: ["All", "React", "Redux Toolkit, MongoDB"],
+    tag: ["Tout", "React", "Redux Toolkit, MongoDB"],
     gitUrl: "https://github.com/wodenp98/PaulVigneron_13_20032023",
     previewUrl: "/videos/video-bankApi.mp4",
   },
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Tout");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -119,13 +119,13 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+        Mes Projets
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
+          name="Tout"
+          isSelected={tag === "Tout"}
         />
         <ProjectTag
           onClick={handleTagChange}
